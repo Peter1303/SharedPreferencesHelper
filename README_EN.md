@@ -47,7 +47,7 @@ sharedPreferencesHelper = new SharedPreferencesHelper(Context context, int mode,
 sharedPreferencesHelper.save();
 ```
 ## 3.数据
-### 删除一个数据
+### 删除一个数据z
 ```java
 sharedPreferencesHelper.delete(String tag);
 ```
