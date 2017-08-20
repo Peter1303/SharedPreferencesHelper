@@ -1,7 +1,6 @@
 # SharedPreferencesHelper
 容易、强大的 SharedPreferencesHelper
 ![API](https://img.shields.io/badge/API-8%2B-brightgreen.svg?style=flat)
-------------------------------------
 # 为什么选择 SharedPreferencesHelper ？
 <ul>
  	<li>小巧玲珑</li>
@@ -9,6 +8,7 @@
  	<li>稳定快速</li>
  	<li>简洁不再繁杂</li>
 </ul>
+
 ### Gradle
 ```groovy
 compile 'com.peter1303.SharedPreferencesHelper'
