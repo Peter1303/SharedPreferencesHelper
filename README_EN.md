@@ -1,71 +1,71 @@
 # SharedPreferencesHelper
-容易、强大的 SharedPreferencesHelper
+Easy,powrful!
 ![API](https://img.shields.io/badge/API-8%2B-brightgreen.svg?style=flat)
-# 为什么选择 SharedPreferencesHelper ？
+# Why do we choose SharedPreferencesHelper?
 <ul>
- 	<li>小巧玲珑</li>
- 	<li>功能比较俱全</li>
- 	<li>稳定快速</li>
- 	<li>简洁不再繁杂</li>
+ 	<li>Small</li>
+ 	<li>Fully functions</li>
+ 	<li>Stable and fast</li>
+ 	<li>Concise</li>
 </ul>
 
 ### Gradle
 ```groovy
 compile 'com.peter1303.SharedPreferencesHelper'
 ```
-支持的函数：
+Supported functions:
 
-|  数据类型  |                 方法                 |
-| --------- |:------------------------------------:|
-| String    | save(String tag, String str);        |
-| int       | save(String tag, int value);         |
-| float     | save(String tag, float value);       |
-| boolean   | save(String tag, boolean value);     |
-| long      | save(String tag, long value);        |
-| StringSet | save(String tag, Set<String> value); |
+|  Data type  |                 Methods                 |
+| ----------- |:---------------------------------------:|
+| String      | save(String tag, String str);           |
+| int         | save(String tag, int value);            |
+| float       | save(String tag, float value);          |
+| boolean     | save(String tag, boolean value);        |
+| long        | save(String tag, long value);           |
+| StringSet   | save(String tag, Set<String> value);    |
 
-# 方法：
-## 1.初始化 SharedPreferencesHelper
+# Methods:
+## 1.Init. SharedPreferencesHelper
 ```java
 private SharedPreferencesHelper sharedPreferencesHelper = null;
 ```
-### 默认初始化（直接使用应用的包名）
+### Default init.(Use the package name of application)
 ```java
 sharedPreferencesHelper = new SharedPreferencesHelper(Context context);
 ```
-### 初始化（自定义名字）
+### Init(Custom name)
 ```java
 sharedPreferencesHelper = new SharedPreferencesHelper(Context context, String name);
 ```
-### 初始化（自定义名字和存储模式）
+### Init.(Custom name and save mode)
 ```java
 sharedPreferencesHelper = new SharedPreferencesHelper(Context context, int mode, String name);
 ```
-## 2.方法
-### 非常的简洁！
+## 2.Mothods
+### Very concise,doesn't it?
 ```java
 sharedPreferencesHelper.save();
 ```
-## 3.数据
-### 删除一个数据z
+## 3.Data
+### Delete a data.
 ```java
 sharedPreferencesHelper.delete(String tag);
 ```
-### 清空所有的数据
+### Clear all data.
 ```java
 sharedPreferencesHelper.clear();
 ```
-## 4.其他
-### 这个库支持布尔值反转存储
+## 4.Others
+### This lib. supports reverse boolean value and save it.
 ```java
 sharedPreferencesHelper.saveReverseBoolean(String tag, boolean defultValue);
 ```
-### 如果您的应用需要存储应用的启动次数（调用一次记录一次）
+### If your application needs record launch times(Call one then save once)
 ```java
 sharedPreferencesHelper.recordLaunchTimes();
 ```
-### 得到应用的启动次数
+### Gets the times of launching times.
 ```java
 sharedPreferencesHelper.getLaunchTimes();
 ```
-# 如果使用了该库，请务必遵守条约
+# If you use the library, be sure to abide by the treaty.
