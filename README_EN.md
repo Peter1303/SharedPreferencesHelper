@@ -33,7 +33,7 @@ private SharedPreferencesHelper sharedPreferencesHelper = null;
 ```java
 sharedPreferencesHelper = new SharedPreferencesHelper(Context context);
 ```
-### Init(Custom name)
+### Init.(Custom name)
 ```java
 sharedPreferencesHelper = new SharedPreferencesHelper(Context context, String name);
 ```
