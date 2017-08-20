@@ -1,6 +1,7 @@
 # SharedPreferencesHelper
 容易、强大的 SharedPreferencesHelper
 ![API](https://img.shields.io/badge/API-8%2B-brightgreen.svg?style=flat)
+# [English](https://github.com/Peter1303/SharedPreferencesHelper/blob/master/README_EN.md)
 # 为什么选择 SharedPreferencesHelper ？
 <ul>
  	<li>小巧玲珑</li>
