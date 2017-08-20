@@ -2,6 +2,7 @@ package com.peter1303.SharedPreferencesHelper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import java.util.Set;
 
 public class SharedPreferencesHelper {
@@ -12,6 +13,12 @@ public class SharedPreferencesHelper {
 	
 	private SharedPreferences sharedPreferences = null;
 	private SharedPreferences.Editor editor = null;
+	// 初始化，使用应用的包名
+	public SharedPreferencesHelper(Context context){
+		this.context = context;
+		sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+		editor = sharedPreferences.edit();
+	}
 	// 初始化，默认模式为 私有 数据
 	public SharedPreferencesHelper(Context context, String name){
 		init(context, Context.MODE_PRIVATE, name);
